@@ -1,0 +1,258 @@
+@charset "utf-8";
+/***公共样式****/
+body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, b, small, u, i, center, dl, dt, dd, ol, ul, li,  sub, sup, tt, var, del, dfn,  ins, kbd, q, s, samp,  strike, applet, object, iframe, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, blockquote, pre, a, abbr, acronym, address, big, cite, code, mark, audio, video, textarea, input[type="button"],select { margin:0; padding:0; outline:none;-webkit-appearance: none; }	
+
+ol, ul{list-style:none;}
+
+html{overflow-x:hidden; -webkit-text-size-adjust:none;}
+
+body {font-size:14px;font-family: "微软雅黑",-apple-system-font, sans-serif;color:#666; line-height:1; }
+
+
+img{display:inline-block; max-width:100%; max-height:100%; border:none}
+/*a 链接*/
+a { text-decoration:none; outline:none;}
+/*a:hover{color:#ff4343!important;transition:0.5s all;-webkit-transition:0.5s all;-moz-transition:0.5s all;-o-transition:0.5s all;-ms-transition:0.5s all;  }*/
+input,textarea{font-family: 'open sans','PingFang SC','Lantinghei SC','Helvetica Neue',Helvetica,Arial,'Microsoft YaHei',"sans-serif";}
+/*居中*/
+.juzhong{display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;
+-webkit-align-items: center; align-items: center;}
+
+.juzhong2{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;}
+
+/*浮动*/
+.fl{float:left;display:inline;}
+.fr{float:right; display:inline}
+.clear { clear:both}
+.clearfix { *zoom:1;}
+.clearfix:after{clear:both; display:block; height:0; visibility:hidden; line-height:0; content:'\20';}
+
+.right{
+	float:right!important;
+}
+i,em{ font-style:normal;}
+/*图片居中*/
+.jzimg { display:table-cell; *display:block; overflow:hidden; font:0px/0px 'Arial'; text-align:center; vertical-align:middle;}
+fieldset, img { border:0; vertical-align:middle}
+
+.jzimg img,.jzimg i{vertical-align:middle; max-width:100%; max-height:100%;}
+.jzimg i{height:100%; display:inline-block;}
+
+
+/* HTML5 重置为较旧版本的浏览器 */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block;}
+blockquote, q{quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after { content:''; content:none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* 按钮样式 */
+input, button, textarea, select { font-size:100%; outline:none;}
+input[type="button"]{cursor:pointer; border:0}
+input[type="submit"]{cursor:pointer; border:0}
+input[type="reset"]{cursor:pointer; border:0}
+
+
+/*删除火狐下按钮默认样式*/
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner{ border:none; padding:0;-webkit-appearance: none; }
+
+.banner li img,.newspic img,.dyximg div,.hotwen li img,.guangbox li img,.renwubox img,.xuepic img{transition:.7s;}
+.banner li:hover img,.newspic:hover img,.hotwen li:hover img,.newlist dt:hover .dyximg div,.guangbox li:hover img,.renwubanner:hover img,.renwuxiao li:hover img,.xuepic:hover img{transform: scale(1.05);}
+
+.swiper-container{
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	list-style: none;
+	padding: 0;
+	z-index: 1;
+}
+.center{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);		
+}
+.flex{
+    display:flex;
+    display:-webkit-flex;
+}
+.flex-wrap{
+	-webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.flex-content{
+	display:flex;
+	display:-webkit-flex;
+	align-items:center;
+	-webkit-align-items:center;
+	justify-content: space-around;
+	-webkit-justify-content:space-around;
+}
+.flex-item{
+	-webkit-align-items:flex-end!important;
+	align-items: flex-end!important;
+    display: flex;
+}
+.text-right{
+	text-align:right;
+}
+.text-center{
+	text-align:center;
+}
+.text-indent{
+	text-indent:20px;
+}
+.font-weight{
+	font-weight:bold;
+}
+.overflow-ellipsis{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+}
+.block{
+	display:block;
+}
+.img{
+	width:100%;
+}
+/*字体大小*/
+.fs16{
+	font-size:16px!important;
+}
+.fs20{
+	font-size:20px!important;
+}
+/*内外边距*/
+.ml2{
+	margin-left:20px!important;
+}
+.ml3{
+	margin-left:30px!important;
+}
+.mr1{
+	margin-right:10px!important;
+}
+.mr2{
+	margin-right:30px!important;
+}
+.mr3{
+	margin-right:20px!important;
+}
+.mr4{
+	margin-right:40px!important;
+}
+.mt0{
+	margin-top:0!important;
+}
+.mt1{
+	margin-top:10px!important;
+}
+.mt2{
+	margin-top:20px!important;
+}
+.mt3{
+	margin-top:30px!important;
+}
+.mt4{
+	margin-top:40px!important;
+}
+.mt5{
+	margin-top:50px!important;
+}
+.mt6{
+	margin-top:60px!important;
+}
+.mt200{
+	margin-top:200px!important;
+}
+.mb2{
+	margin-bottom:20px!important;
+}
+.mb3{
+	margin-bottom:30px!important;
+}
+.mb4{
+	margin-bottom:30px!important;
+}
+.mb5{
+	margin-bottom:50px!important;
+}
+.mb6{
+	margin-bottom:60px!important;
+}
+.mb7{
+	margin-bottom:70px!important;
+}
+.mb8{
+	margin-bottom:80px!important;
+}
+.pb3{
+	padding-bottom:30px!important;
+}
+.pt3{
+	padding-top:30px!important;
+}
+.pt4{
+	padding-top:40px!important;
+}
+.pt5{
+	padding-top:50px!important;
+}
+.pt8{
+	padding-top:80px!important;
+}
+.pb1{
+	padding-bottom:10px!important;
+}
+.pb4{
+	padding-bottom:40px!important;
+}
+.pb5{
+	padding-bottom:50px!important;
+}
+.pb6{
+	padding-bottom:60px!important;
+}
+.pb250{
+	padding-bottom:300px!important;
+}
+.pr2{
+	padding-right:20px!important;
+}
+.pr3{
+	padding-right:30px!important;
+}
+.pr4{
+	padding-right:40px!important;
+}
+.mr24{
+	margin-right:24px!important;
+}
+/*颜色*/
+.grey{
+	color:#898989;
+}
+.bg-white{
+	color:white!important;
+}
+.bg-black{
+	color:#434343!important;
+}
+@font-face {
+  font-family: "source-han-serif-sc";
+  src: url("../fonts/SourceHanSerifSC-Heavy.otf") format("truetype");
+}
+@font-face {
+  font-family: "source-han-serif-sc";
+  src: url("../fonts/SourceHanSerifSC-Heavy.woff2") format("woff2"),
+       url("../fonts/SourceHanSerifSC-Heavy.woff") format("woff"),
+       url("../fonts/SourceHanSerifSC-Heavy.ttf") format("truetype"),
+       url("../fonts/SourceHanSerifSC-Heavy.eot") format("embedded-opentype"),
+       url("../fonts/SourceHanSerifSC-Heavy.svg") format("svg");
+}
